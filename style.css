@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Kamikzom";
+  src: url(fonts/KAMIKZOM.ttf);
+  font-weight: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("images/background.jpg");
+  font-size: 120%;
+}
+.background {
+  background: #000000d0;
+  padding: 45px;
+  margin: 15px;
+  width: 100%;
+  max-width: 1200px;
+  font-family: "Kamikzom";
+  color: white;
+  text-shadow: 4px 3px 3px black;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  border: 3px solid #7a8d7d;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  width: calc(100% - 50px);
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  border-radius: 16px;
+  color: black;
+  font-family: "Kamikzom";
+  font-size: 105%;
+  border: 3px solid #7a8d7d;
+}
+
+.search-bar::placeholder {
+  font-family: "Kamikzom";
+}
+
+.weather {
+  margin-top: 15px;
+  margin-bottom: 15px;  
+}
+
+/*
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Načítám...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 155px;
+  font-size: 25px;
+}
+
+*/
+
+.day {
+  margin-top: 10px;
+}
+
+h1.temperature {
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.days-forecast h2 {
+  margin-top: 25px;
+}
+
+.weather-cards {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {  
+  border: 3px solid #7a8d7d;
+  border-radius: 16px;
+  padding: 8px 15px;
+  margin-top: 25px;
+}
+
+button {
+  margin: 8px;
+  border-radius: 50%;
+  border: none;
+  height: 42px;
+  width: 42px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 3px solid #7a8d7d;
+}
+
+button:hover {
+  background: #5d6f60;
+  color: black;
+  /*transition: 0.3s;*/
+}

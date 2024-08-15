@@ -1,0 +1,63 @@
+/* ÚPRAVA ODSAZENÍ POLOŽEK VYHLEDÁVÁNÍ*/
+
+@media only screen and (max-width: 1050px) {
+    
+    .search {        
+        display: flex;
+        margin-top: 400x;
+    }
+    
+    .weather {
+        height: 50%;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    
+    .search {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    
+    .search {
+        margin-top: 535px;
+    }
+}
+
+/* ÚPRAVA POLOŽEK KARET - 5-DENNÍ PŘEDPOVĚDI */
+
+@media only screen and (max-width: 1030px) {   
+    
+    .weather .current-weather {
+        padding-top: 10px;
+    }
+
+    .weather-cards {
+        flex-wrap: wrap;
+    } 
+    
+    .weather-cards .card {
+        width: calc(100% / 5 - 15px);
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    
+    .weather-cards .card {
+        width: calc(100% / 3 - 15px);
+    }
+}
+
+@media only screen and (max-width: 665px) {
+    
+    .weather-input {
+        width: 400px;
+    }
+    
+    .weather-cards .card {
+        width: calc(100% / 2 - 10px);
+    }
+}

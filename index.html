@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Předpověd počasí</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="others/grid.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Zadejte město" />
+            <button class="search-button">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"></path>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="weather loading">
+            <div class="current-weather">
+                <div class="details">
+                    <h2 class="city">Aktuální počasí v</h2>
+                    <h1 class="temperature">°C</h1>
+                    <img src="" alt="" class="icon" />
+                    <div class="description"></div>
+                    <div class="humidity">Vlhkost:</div>
+                    <div class="wind">Rychlost větru:</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="days-forecast">
+            <h2>5-denní předpoveď</h2>
+            <ul class="weather-cards">
+                <li class="card">
+                    <h3>Datum</h3>
+                    <img src="" alt="" class="icon">
+                    <div class="temperature"> °C</div>
+                    <div class="humidity"> %</div>
+                    <div class="wind"> km/h</div>
+                </li>
+
+                <li class="card">
+                    <h3>Datum</h3>
+                    <img src="" alt="" class="icon">
+                    <div class="temperature"> °C</div>
+                    <div class="humidity"> %</div>
+                    <div class="wind"> km/h</div>
+                </li>
+
+                <li class="card">
+                    <h3>Datum</h3>
+                    <img src="" alt="" class="icon">
+                    <div class="temperature"> °C</div>
+                    <div class="humidity"> %</div>
+                    <div class="wind"> km/h</div>
+                </li>
+
+                <li class="card">
+                    <h3>Datum</h3>
+                    <img src="" alt="" class="icon">
+                    <div class="temperature"> °C</div>
+                    <div class="humidity"> %</div>
+                    <div class="wind"> km/h</div>
+                </li>
+
+                <li class="card">
+                    <h3>Datum</h3>
+                    <img src="" alt="" class="icon">
+                    <div class="temperature"> °C</div>
+                    <div class="humidity"> %</div>
+                    <div class="wind"> km/h</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
